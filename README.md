@@ -3,7 +3,7 @@
 [Discord.js](https://discord.js.org/#/)
 
 ## Author
-Marshmallow75
+[Marshmallow75](https://github.com/Marshmallow75)
 
 ## Cogs
 
