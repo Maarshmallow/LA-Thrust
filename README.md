@@ -17,7 +17,7 @@ Our Discord server: https://discord.gg/Wmfs8MB
 
 Main LA Gaming - Brawl Stars server: https://discord.gg/hc5T8HT
 
-[Legendary Alliance Official Website] (http://legendaryalliancegaming.com/)
+[Legendary Alliance Official Website](http://legendaryalliancegaming.com/)
 
 
 
