@@ -19,5 +19,8 @@ Main LA Gaming - Brawl Stars server: https://discord.gg/hc5T8HT
 
 [Legendary Alliance Official Website](http://legendaryalliancegaming.com/)
 
+## License
+This project is licensed under GPLv3 - see the LICENSE file for more information.
+
 
 
