@@ -1,0 +1,16 @@
+{
+    "author": [
+        "Marshmallow75"
+    ],
+    "name": "Clash of Clans",
+    "description": "Clash of Clans",
+    "install_msg": "Thank you for installing our Clash of Clans cog. Set your BS API token with `[p]set api bsapi api_key,YOURAPIKEY`",
+    "short": "Clash of Clans related commands",
+    "requirements": [
+        "brawlstats"
+    ],
+    "tags": [
+        "Clash of Clans",
+        "Stats"
+    ]
+}
