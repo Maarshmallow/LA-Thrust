@@ -1,4 +1,4 @@
-# JavaScript cogs for LA Thrust's Discord bot
+# Python cogs for LA Thrust's Discord bot
 
 [Discord.js](https://discord.js.org/#/)
 
