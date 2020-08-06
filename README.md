@@ -6,7 +6,7 @@
 [Marshmallow75](https://github.com/Marshmallow75)
 
 ## Contributors
-[datura-metel] (https://github.com/datura-metel)
+[datura-metel](https://github.com/datura-metel)
 
 ## Cogs
 
