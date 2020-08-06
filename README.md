@@ -5,6 +5,9 @@
 ## Author
 [Marshmallow75](https://github.com/Marshmallow75)
 
+## Contributors
+[datura-metel] (https://github.com/datura-metel)
+
 ## Cogs
 
 [Clash of Clans](https://clashofclans.com/) player stats, club list.
