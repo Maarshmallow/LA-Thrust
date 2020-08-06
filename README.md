@@ -1,6 +1,6 @@
 # Python cogs for LA Thrust's Discord bot
 
-[Discord.js](https://discord.js.org/#/)
+[Discord.py](https://discordpy.readthedocs.io/en/latest/)
 
 ## Author
 [Marshmallow75](https://github.com/Marshmallow75)
