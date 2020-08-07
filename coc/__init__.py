@@ -1,5 +1,7 @@
-from .mycog import Mycog
+from .coc import Coc
 
 
-def setup(bot):
-    bot.add_cog(Mycog())
+async def setup(bot):
+    cog = Coc(bot)
+    await cog.initialize()
+    bot.add_cog(cog)
