@@ -28,7 +28,7 @@ class Coc(commands.Cog):
             response = httpx.get(url=url, headers=self.headers, timeout=20)
             return response.json()
         except Exception as e:
-            await ctx.send(f"Something went wrong: {e}")
+            return "Something went wrong."
 
     async def find_member(self, ctx, member: discord.Member):
         for u in self.config.all_users():
@@ -36,12 +36,14 @@ class Coc(commands.Cog):
                 await ctx.send(self.config.user(u).tag())
         await ctx.send("No matches were found.")
 
-    def get(self, ctx, tag: str):
+    async def get(self, ctx, tag: str):
         """Takes in the clan's tag and returns clan info"""
 
         tag = "clans/%23" + tag.replace("#", "")
         clan_json = self.apirequest(tag)
-
+        if clan_json == "Something went wrong.":
+            return await ctx.send("Something went wrong.")
+            
         if clan_json['clanLevel'] < 5:
             donation_upgrade = 0
         elif clan_json['clanLevel'] < 10:
