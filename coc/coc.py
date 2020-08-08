@@ -28,7 +28,7 @@ class Coc(commands.Cog):
             response = httpx.get(url=url, headers=self.headers, timeout=20)
             return response.json()
         except Exception as e:
-            return "Something went wrong."
+            return e
        
     @commands.command()
     async def find_member(self, ctx, member: discord.Member):
@@ -43,15 +43,16 @@ class Coc(commands.Cog):
 
         tag = "clans/%23" + tag.replace("#", "")
         clan_json = self.apirequest(tag)
-        if clan_json == "Something went wrong.":
-            return await ctx.send("Something went wrong.")
-            
-        if clan_json['clanLevel'] < 5:
-            donation_upgrade = 0
-        elif clan_json['clanLevel'] < 10:
-            donation_upgrade = 1
-        else:
-            donation_upgrade = 2
+        
+        try:
+            if clan_json['clanLevel'] < 5:
+                donation_upgrade = 0
+            elif clan_json['clanLevel'] < 10:
+                donation_upgrade = 1
+            else:
+                donation_upgrade = 2
+        except:
+            return await ctx.send(clan_json)
         
         await ctx.send("All went good.")
         #then you can just use clan_json['field'] to display info about the clan. docs are available, you can check them, I'm not a coc expert so idk what to put here
