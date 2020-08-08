@@ -29,13 +29,15 @@ class Coc(commands.Cog):
             return response.json()
         except Exception as e:
             return "Something went wrong."
-
+       
+    @commands.command()
     async def find_member(self, ctx, member: discord.Member):
         for u in self.config.all_users():
             if discord.utils.escape_markdown(u.display_name.lower()) == discord.utils.escape_markdown(member.display_name.lower()):
                 await ctx.send(self.config.user(u).tag())
         await ctx.send("No matches were found.")
-
+    
+    @commands.command()
     async def get(self, ctx, tag: str):
         """Takes in the clan's tag and returns clan info"""
 
@@ -50,6 +52,7 @@ class Coc(commands.Cog):
             donation_upgrade = 1
         else:
             donation_upgrade = 2
-
+        
+        await ctx.send("All went good.")
         #then you can just use clan_json['field'] to display info about the clan. docs are available, you can check them, I'm not a coc expert so idk what to put here
 
