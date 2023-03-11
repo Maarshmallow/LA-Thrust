@@ -3,7 +3,7 @@
 [Discord.py](https://discordpy.readthedocs.io/en/latest/)
 
 ## Author
-[Marshmallow75](https://github.com/Maarshmallow)
+[Marshmallow](https://github.com/Maarshmallow)
 
 ## Contributors
 [datura-metel](https://github.com/datura-metel)
