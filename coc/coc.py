@@ -1,6 +1,6 @@
 import discord
 from redbot.core import commands, Config
-
+#grdrdrtdrtdrdhrdtrhdhtrd
 from re import sub
 
 class Coc(commands.Cog):
