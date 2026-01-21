@@ -1,4 +1,4 @@
-# Python Cogs for LA Thrust's Discord bot
+# Python Cogs for Discord bot
 
 [Discord.py](https://discordpy.readthedocs.io/en/latest/)
 
